@@ -1,0 +1,49 @@
+/* -- CSD340 Assignment 2.2, Tyler O'Riley, 05/27/2023  -- */
+
+body {
+    font-size: 16px;
+}
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font-weight: 500;
+    padding-top: 15px;
+    text-align: left;
+}
+address {
+    text-align: center;
+}
+
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:visited {
+    color: green ;
+    text-decoration-line: dotted;
+    text-decoration-color: purple;
+}
+a:hover {
+    color: red ;
+    text-decoration-line: underline;
+    text-decoration-color: #d6a800;
+}
+a {
+    font-size: 1.25em;
+    color: #4f3674;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.sentence {
+    font-style: italic;
+    text-indent: 2em;
+}
