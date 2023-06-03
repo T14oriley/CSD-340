@@ -1,47 +1,49 @@
 /* -- CSD340 Assignment 3.3, Tyler O'Riley, 06/03/2023  -- */
 
 h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
 h3 {
     font-weight: 500;
 }
 
-ol {
-    font-weight: 300;
-    padding: 10px;
+#container {
+    display: flex;
 }
-ul {
+#books {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
-    padding: 10px;
-    list-style-type: upper-roman;
-}
-
-div.books {
-    width: 45%;
-    height: 100px;
     float: left;
+    width: 45%;
+    border-width: 1px;
     border-style: solid;
     border-radius: 15px;
-    border-width: 1px;
+    padding: 10px;
+    border-color: red;
 }
-div.lesson {
+#lesson {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     width: 45%;
-    margin-left: 50%;
-    height: 100px;
+    float: right;
+    font-weight: 300;
+    padding: 10px;
     border-style: dashed;
     border-radius: 15px;
     border-width: 1px;
+    border-color: red;
+    list-style-type: upper-roman;
 }
-div.home {
+#home {
+    float: right;
     width: 100%;
     margin-top: 60%;
-    float: right;
     margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
+    float: right;
 }
 a:hover {
     text-decoration:underline;
