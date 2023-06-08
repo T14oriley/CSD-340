@@ -1,0 +1,52 @@
+/* -- CSD340 Assignment 4.2, Tyler O'Riley, 06/07/2023  -- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#image-gallery {
+    margin-top: 10%;
+}
+
+.book-entries {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.alien {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color:rgba(108,196,23,0.3);
+}
+.wotw {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color:rgba(139,0,0,0.3);
+}
+.magyk {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    background-color:rgba(40,60,80,0.3);
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+#home {
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    float: right;
+}
+a:hover {
+    text-decoration:underline;
+}
