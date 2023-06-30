@@ -1,0 +1,56 @@
+<!-- CSD340 Assignment 2.2, Tyler O'Riley, 05/27/2023  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <meta name="description"
+            content="Basic introduction to JavaScript"  />
+        <meta name="keywords"
+            content="CSS, HTML, Coding, Wed Dev"  />
+        <meta name="author"
+            content="Tyler O'Riley"  />
+        <meta name="robots"
+            content="nofollow"  />
+
+            <script>
+                var firstVariableValue = "Twister";
+                var secondVariableValue = "Meteorology";
+                var thirdVariableValue = "five";
+                var fourthVariableValue = "Kingdom Hearts";
+            </script>
+    </head>
+
+    <body>
+        <div id=”container”></div>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <p class="intro" >
+            There are many movies I have enjoyed watching over the years. I can confidently say I am more inclined towards the fantasy genre.
+            Outside of fantasy, the movie <span id = "Twister">_________</span> will always hold a special place in my heart.
+            Doing <span id = "Meteorology">_________</span> in college further cemented the film as one of my all time favorites.
+        </p>
+        <p>
+            Video games have always been present in my life from the young age of <span id = "five">_________</span> to present day.
+            One of my most beloved games is <span id = "Kingdom Hearts">_________</span> and I find myself replaying it every other year.
+            I believe everyone should play at least one game in their life to see how fun they can be.
+        </p>
+        <p>
+            My favorite hobby when I find time is to make candles. I find the activity to be very calming and the scents I can produce make it well worth it.
+            The tedious part of this task is the waiting times involved. One candle can take about thirty minutes to make and involves a lot of waiting
+            and watching. the end result is always worth it and I love making them as christmas gifts.
+        </p>
+        <p>
+            <button type="button"
+            onclick="document.getElementById('Twister').innerHTML = firstVariableValue">Twister</button> <br /> 
+            <button type="button"
+            onclick="document.getElementById('Meteorology').innerHTML = secondVariableValue">Meteorology</button> <br />
+            <button type="button"
+            onclick="document.getElementById('five').innerHTML = thirdVariableValue">five</button> <br />
+            <button type="button"
+            onclick="document.getElementById('Kingdom Hearts').innerHTML = fourthVariableValue">Kingdom Hearts</button> <br />  
+        </p>
+        <div id="home">
+            <a href="../index.html">Landing/Home Page</a>
+        </div>
+    </body>
+
+</html>
