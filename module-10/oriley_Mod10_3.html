@@ -1,0 +1,34 @@
+<!-- CSD340 Assignment 10.3, Tyler O'Riley, 07/29/2023  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Development with HTML and CSS</title>
+<script>
+  function displayImage(imageFile){
+    var imageElement = document.getElementById("kingdom");
+    imageElement.src = imageFile;
+  }
+</script>
+</head>
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <br />
+  <div>
+    <a href="#"
+       onmouseover="fantasy.src='FFXI.jpg';"
+       onmouseout="fantasy.src='FFXIV.jpg';"
+    >
+      <img border="0" id="fantasy" src="FFXIV.jpg" style="max-width: 35%; height: auto;">
+    </a>
+  </div>
+  <br />
+  <div>
+    <a href="#"
+       onclick="displayImage('KH3.jpg'); return false;"
+    >
+      <img border="0" id="kingdom" src="KH2.jpg" style="max-width: 35%; height: auto;">
+    </a>
+  </div>
+  <br />
+</body>
+</html>
