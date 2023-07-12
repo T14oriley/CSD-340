@@ -1,0 +1,29 @@
+<!-- CSD340 Assignment 10.3, Tyler O'Riley, 07/29/2023  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <link href="oriley_Mod11_2.css" type="text/css" rel="stylesheet">
+        <script src="oriley_Mod11_2.js"></script>
+    </head>
+    <body>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <p>
+            Welcome to the To-Do List program. You have three different buttons to utilize. 
+            Add, adds a new item to your to-do list. Delete Last Entry, erases the most recent addition to the list.
+            Finally, Display, will list out the current list below
+        </p>
+
+        <div class="button-group"> <!--Div container housing button javascript button displays-->
+            <input type="text" id="userInput">
+            <button onclick="addUserInput()">Add</button>
+            <button onclick="deleteUserEntry()">Delete Last Entry</button>
+            <button onclick="displayCurrentList()">Display</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="todoList" class="todo-list"></div>
+    </body>
+</html>

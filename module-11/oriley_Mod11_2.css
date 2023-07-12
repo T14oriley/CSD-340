@@ -1,0 +1,47 @@
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    color: #333333;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="text"], button {
+    background-color: #0000ff;
+    color: white;
+    margin: 5px;
+}
+
+.divider {
+    margin-top: 20px;
+    width: 50%;
+    border-top: 3px solid black;
+}
+
+.todo-list {
+    margin-top: 10px;
+}
+
+.todo-item {
+    margin-bottom: 5px;
+}
