@@ -1,0 +1,87 @@
+<!-- CSD340 Assignment 12.2, Tyler O'Riley, 07/20/2023  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>“CSD 340 Web Development with HTML and CSS</title>
+        <link href="oriley_mod12_2.css" type="text/css" rel="stylesheet">
+    
+
+        <script>
+            function sortAscending() {
+                var book = [
+                    "War of The Worlds",
+                    "Harry Potter",
+                    "Magyk",
+                    "The Witcher",
+                    "Halo",
+                    "Aliens",
+                    "Hunger Games",
+                    "Lord of The Rings",
+                    "The Hobbit",
+                    "The Odyssey",
+                    ];
+                
+                var bookSorted = book.slice().sort();               // slice to return new array value and sort for alphabetical
+                var list = document.getElementById("favBooks");     //pulls list items from HTML code
+                list.innerHTML = "";                                //sets current list item to blank so new can be inserted
+
+                for (var x = 0; x < bookSorted.length; x++) {       //for loop to append new list items 
+                    var listBook = document.createElement("li");    //createElement inserts needed HTML li for the list items
+                    listBook.textContent = bookSorted[x];           //assigns the array word to listBook using textContent
+                    list.appendChild(listBook);                     //appendChild inserts listBooks array word into the blank list
+                }
+            }
+
+            function sortDescending() {
+                var book = [
+                    "War of The Worlds",
+                    "Harry Potter",
+                    "Magyk",
+                    "The Witcher",
+                    "Halo",
+                    "Aliens",
+                    "Hunger Games",
+                    "Lord of The Rings",
+                    "The Hobbit",
+                    "The Odyssey",
+                    ];
+                
+                var bookSorted = book.slice().sort().reverse();
+                var list = document.getElementById("favBooks");
+                list.innerHTML = "";
+
+                for (var x = 0; x < bookSorted.length; x++) {
+                    var listBook = document.createElement("li");
+                    listBook.textContent = bookSorted[x];
+                    list.appendChild(listBook);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id=”container”>
+            <h1>Assignment 12.2: JavaScript - Part 4</h1>
+            <div id="books">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id = "favBooks">
+                    <li>War of The Worlds</li>    
+                    <li>Harry Potter</li> 
+                    <li>Magyk</li> 
+                    <li>The Witcher</li> 
+                    <li>Halo</li> 
+                    <li>Aliens</li> 
+                    <li>Hunger Games</li> 
+                    <li>Lord of The Rings</li> 
+                    <li>The Hobbit</li> 
+                    <li>The Odyssey</li> 
+                </ol>
+                <button onclick="sortAscending()">Alphabetical </button>
+                <button onclick="sortDescending()">Reverse Alphabetical</button>
+            </div>
+            <div id="home">
+                <a href="../index.html">Landing/Home Page</a>
+            </div>
+        </div>  
+    </body>
+</html>
